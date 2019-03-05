@@ -1,0 +1,28 @@
+{
+  "name": "@myscope/core",
+  "version": "1.2.15",
+  "description": "",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ../../node_modules/typescript/bin/tsc",
+    "clean": "node ../../node_modules/rimraf/bin.js lib",
+    "prepare": "npm run build",
+    "prebuild": "npm run clean && echo Using TypeScript && node ../../node_modules/typescript/bin/tsc --version"
+  },
+  "dependencies": {
+    "@myscope/logger": "1.2.15",
+    "reflect-metadata": "^0.1.13"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "gitHead": "043ad74b3d1e1c64403588c19116f0107d0cac33"
+}

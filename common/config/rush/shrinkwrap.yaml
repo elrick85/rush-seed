@@ -1,0 +1,34 @@
+dependencies:
+  '@rush-temp/core': 'file:projects/core.tgz'
+  '@rush-temp/logger': 'file:projects/logger.tgz'
+  reflect-metadata: 0.1.13
+packages:
+  /reflect-metadata/0.1.13:
+    dev: false
+    resolution:
+      integrity: sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
+  'file:projects/core.tgz':
+    dependencies:
+      reflect-metadata: 0.1.13
+    dev: false
+    name: '@rush-temp/core'
+    resolution:
+      integrity: sha512-CjC2/Nb519jNeMwBGC6WKeAfeclQLqvw8iymXOQOZkK6Upng5vGDGGNZBN2jlHyavT046WVIIy92Wt7qFaDSjg==
+      tarball: 'file:projects/core.tgz'
+    version: 0.0.0
+  'file:projects/logger.tgz':
+    dependencies:
+      reflect-metadata: 0.1.13
+    dev: false
+    name: '@rush-temp/logger'
+    resolution:
+      integrity: sha512-f8yMTPlMGj1ywjhhFL6Hj+BMl+YUIePkl9u+scquUVrNKJbSHVgjBTLayohZjyBvLdbuPqM0OcByAjrySLGpyQ==
+      tarball: 'file:projects/logger.tgz'
+    version: 0.0.0
+registry: 'http://localhost:4873/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@rush-temp/core': 'file:./projects/core.tgz'
+  '@rush-temp/logger': 'file:./projects/logger.tgz'
+  reflect-metadata: ^0.1.13

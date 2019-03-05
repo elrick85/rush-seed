@@ -1,6 +1,6 @@
 {
   "name": "@myscope/logger",
-  "version": "1.2.15",
+  "version": "1.2.17-SNAPSHOT",
   "description": "",
   "files": [
     "lib"

@@ -12,14 +12,18 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ../../node_modules/typescript/bin/tsc",
-    "clean": "node ../../node_modules/rimraf/bin.js lib",
+    "build": "node node_modules/typescript/bin/tsc",
+    "clean": "node node_modules/rimraf/bin.js lib",
     "prepare": "npm run build",
-    "prebuild": "npm run clean && echo Using TypeScript && node ../../node_modules/typescript/bin/tsc --version"
+    "prebuild": "npm run clean && echo Using TypeScript && node node_modules/typescript/bin/tsc --version"
   },
   "dependencies": {
     "@myscope/logger": "1.2.15",
     "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3333",
+    "rimraf": "latest"
   },
   "keywords": [],
   "author": "",
